@@ -6,7 +6,6 @@ import BodyRight3 from "./BodyRight3/BodyRight3";
 
 class Products extends React.Component {
     render() {
-
         return (
             <div className="body-right">
                 <BodyRight1></BodyRight1>
