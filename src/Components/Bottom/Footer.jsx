@@ -8,7 +8,7 @@ class Footer extends React.Component {
                     <a href="/"><h2 style={{ color: "#fff" }}>Amazing shop</h2></a>
                 </div>
                 <div className="contact footer-contact" >
-                    <h4 className="sub-title"><i class="fas fa-map-marker-alt"></i> My city:
+                    <h4 className="sub-title"><i className="fas fa-map-marker-alt"></i> My city:
                         <a href="https://goo.gl/maps/27cDydCFh38FUNeb6" target="_blank">
                             <span style={{ color: "#8077aa" }}>Los Angeles</span>
                         </a>

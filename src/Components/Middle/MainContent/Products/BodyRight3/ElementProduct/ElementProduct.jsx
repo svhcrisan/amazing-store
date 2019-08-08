@@ -1,13 +1,18 @@
 import React from "react";
 import "./ElementProduct.css"
 
-const ElementProduct = () => {
+
+
+
+
+const ElementProduct = (props) => {
+    console.log(props);
     return (
-        <div class="product-page">
-            <img src="images/img1.jpg" alt="img" class="product-img"></img>
-            <h4>Missha All Around Safe Block Sebum Zero Gel</h4>
-            <span>$4.00</span>
-            <div class="add-to-cart"><a href="">Add to cart</a></div>
+        <div className="product-page">
+            <img src={`/img/${props.product.img}`} alt={props.product.product_description} className="product-img"></img>
+            <h4>{props.product.product_name}</h4>
+            <span>${props.product.price}</span>
+            <div className="add-to-cart"><a href="">Add to cart</a></div>
         </div>
     )
 }

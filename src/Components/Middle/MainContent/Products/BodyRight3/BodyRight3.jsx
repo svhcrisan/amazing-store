@@ -1,21 +1,32 @@
 import React from "react";
 import "./BodyRight3.css";
 import ElementProduct from "./ElementProduct/ElementProduct";
+import axios from 'axios';
 
-const BodyRight3 = () => {
-    return (
-        <div class="body-right-3">
-            <ElementProduct></ElementProduct>
-            <ElementProduct></ElementProduct>
-            <ElementProduct></ElementProduct>
-            <ElementProduct></ElementProduct>
-            <ElementProduct></ElementProduct>
-            <ElementProduct></ElementProduct>
-            <ElementProduct></ElementProduct>
-            <ElementProduct></ElementProduct>
-        </div>
-    )
+class BodyRight3 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { products: [] };
+        this.getProducts();
+    }
 
+    getProducts = async () => {
+        try {
+            const myArrProd = await axios.get('https://localhost:5000/products');
+            this.setState({ products: myArrProd.data })
+        } catch (err) {
+            console.log(err);
+            return;
+        }
+    }
+
+    render() {
+        return (
+            <div className="body-right-3" >
+                {this.state.products ? this.state.products.map(product => (<ElementProduct product={product} />)) : null}
+            </div>
+        )
+    }
 }
 
 export default BodyRight3;
