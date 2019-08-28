@@ -1,9 +1,9 @@
 import React from "react";
-import "./BodyRight3.css";
+import "./DisplayProducts.css";
 import ElementProduct from "./ElementProduct/ElementProduct";
 import axios from 'axios';
 
-class BodyRight3 extends React.Component {
+class DisplayProducts extends React.Component {
     constructor(props) {
         super(props);
         this.state = { products: [] };
@@ -29,4 +29,4 @@ class BodyRight3 extends React.Component {
     }
 }
 
-export default BodyRight3;
+export default DisplayProducts;

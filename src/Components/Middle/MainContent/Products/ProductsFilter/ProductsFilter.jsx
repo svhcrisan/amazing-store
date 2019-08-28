@@ -1,7 +1,7 @@
 import React from "react";
-import "./BodyRight2.css";
+import "./ProductsFilter.css";
 
-const BodyRight2 = () => {
+const ProductsFilter = () => {
     return (
         <div className="body-right-2">
             <ul className="br2-left">
@@ -17,4 +17,4 @@ const BodyRight2 = () => {
     )
 }
 
-export default BodyRight2;
+export default ProductsFilter;

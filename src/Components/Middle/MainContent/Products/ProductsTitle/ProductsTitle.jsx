@@ -1,6 +1,6 @@
 import React from "react";
-import "./BodyRight1.css";
-const BodyRight1 = () => {
+import "./ProductsTitle.css";
+const ProductsTitle = () => {
     return (
         <div className="body-right-1">
             <div className="br1-left">
@@ -12,8 +12,7 @@ const BodyRight1 = () => {
                 <span className="arrows"><i className="fas fa-chevron-right"></i></span>
             </div>
         </div>
-
     )
 }
 
-export default BodyRight1;
+export default ProductsTitle;
