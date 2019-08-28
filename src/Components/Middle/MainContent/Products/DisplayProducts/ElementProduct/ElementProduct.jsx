@@ -1,10 +1,6 @@
 import React from "react";
 import "./ElementProduct.css"
 
-
-
-
-
 const ElementProduct = (props) => {
     console.log(props);
     return (
